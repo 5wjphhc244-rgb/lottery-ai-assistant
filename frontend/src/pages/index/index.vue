@@ -297,6 +297,8 @@ async function sendMessage() {
   display: flex;
   flex-direction: column;
   gap: 24rpx;
+  height: calc(100vh - 120rpx);
+  overflow-y: auto;
 }
 
 .message-row {

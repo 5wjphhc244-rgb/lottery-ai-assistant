@@ -1,0 +1,24 @@
+{
+  "name": "lottery-ai-assistant",
+  "appid": "",
+  "description": "福彩AI助手 - 历史数据查询工具",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "福彩AI助手",
+    "router": {
+      "mode": "hash",
+      "base": "/lottery/"
+    },
+    "devServer": {
+      "port": 5173,
+      "proxy": {
+        "/api": {
+          "target": "http://localhost:3000",
+          "changeOrigin": true
+        }
+      }
+    }
+  }
+}
